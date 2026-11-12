@@ -14,6 +14,8 @@ text = "The dog and the cat and the mouse"
 text = text.lower()
 text = text.split()
 
+
+
 counts = {}
 
 for x in text:
