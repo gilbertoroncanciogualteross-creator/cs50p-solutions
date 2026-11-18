@@ -6,14 +6,15 @@ text = "The dog and the cat and the mouse"
 text = text.lower()
 text = text.split()
 
-words = {
-
-}
+words = {}
 
 for word in text:
-    if word in words.keys():
+    if word in word:
         words[word] += 1
     else:
         words[word] = 1
 
-print(words)
+sorted_words = sorted(words.items(), key=lambda item: item[1], reverse=True)
+
+for word, count in sorted_words[:5]:
+    print(word, count)
